@@ -1,3 +1,3 @@
-This small script will perform a TCP check every 5 second to a destination/port and output the results into a .txt file.
-Destination/port can be modified, of course
-Also, you can change the file path and the sleep time if needed
+- This small script will perform a TCP check every 5 second to a destination/port and output the results into a .txt file.
+- Destination/port can be modified, of course
+- Also, you can change the file path and the sleep time if needed
