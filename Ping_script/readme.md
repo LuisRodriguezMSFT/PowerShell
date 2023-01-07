@@ -1,0 +1,2 @@
+This script pings a host continously and will automatically lauch a netsh trace if there's no response from the host three consecutive times.
+Please note that the trace must be stopped manually running "netsh trace stop"
