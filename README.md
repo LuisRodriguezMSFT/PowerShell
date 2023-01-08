@@ -1,2 +1,2 @@
 # PowerShell
-This is my space or a few PowerShell scripts.
+This is a space for a few PowerShell scripts.
