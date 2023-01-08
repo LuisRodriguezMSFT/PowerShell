@@ -15,13 +15,11 @@ for ($i = 1; $i -le $portCount; $i++) {
 
 # Test the connection to the destination on each of the specified ports
 foreach ($port in $ports) {
-    $connection = New-Object System.Net.Sockets.TcpClient
-    try {
-        $connection.Connect($dhost, $port)
+    $connection = Test-NetConnection $dhost -Port $port -InformationLevel Quiet
+    if ($connection.TcpTestSucceeded) {
         "Connection to port $port succeeded"
-    } catch {
+    } else {
         "Connection to port $port failed"
-    } finally {
-        $connection.Dispose()
     }
 }
+
